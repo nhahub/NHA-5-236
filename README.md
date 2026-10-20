@@ -159,11 +159,5 @@ The Flutter mobile application is also part of the overall platform and communic
 | Mostafa Ali | Team Member | [mostafaAli-17](https://github.com/mostafaAli-17) |
 | Andrw | Team Member | [infinite556](https://github.com/infinite556) |
 
-## Project Objective
 
-The objective of Commit Ma3ana is to deliver an integrated learning platform that simplifies programming education for Computer Science students.
-
-The project combines application development with practical DevOps implementation by containerizing the main services, configuring inter-service communication, and running the application through Docker Compose.
-
-This provides a foundation for future enhancements, including cloud infrastructure provisioning, CI/CD automation, container orchestration, and automated deployment.
 
