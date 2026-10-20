@@ -1,0 +1,58 @@
+services:
+
+  db:
+    build:
+      context: ../database
+
+    environment:
+      MYSQL_ROOT_PASSWORD: root1234
+      MYSQL_DATABASE: lms_backend
+
+    volumes:
+      - lms_mysql_data:/var/lib/mysql
+
+    ports:
+      - "3306:3306"
+
+
+  backend:
+    build:
+      context: ../LMS_backend
+
+    env_file:
+      - ../LMS_backend/.env
+
+    ports:
+      - "8000:8000"
+
+    depends_on:
+      - db
+
+
+  flutter-web:
+    build:
+      context: ../LMS-Admin-Instructor
+      args:
+        BASE_URL: http://localhost:8000/api/
+
+    ports:
+      - "8080:80"
+
+    depends_on:
+      - backend
+
+
+  angular-web:
+    build:
+      context: ../LMS-Student-Web
+
+    ports:
+      - "8081:80"
+
+    depends_on:
+      - backend
+
+
+volumes:
+  lms_mysql_data:
+    external: true
