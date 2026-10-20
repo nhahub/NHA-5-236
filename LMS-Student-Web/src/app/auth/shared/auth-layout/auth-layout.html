@@ -1,0 +1,99 @@
+<div class="flex min-h-screen font-sans">
+
+  <div class="hidden lg:flex lg:w-[48%] bg-gradient-to-br from-[var(--primary)] to-[#0c6d88]
+              text-white flex-col justify-center items-center px-16 py-20 relative">
+
+              <div class="w-10 h-10 rounded-2xl flex items-center justify-center
+              bg-[var(--primary)] text-white shadow-md group-hover:scale-105 transition">
+
+
+
+        </div>
+
+    <div class="absolute top-8 left-10 flex items-center gap-3">
+        <div class="w-10 h-10 rounded-2xl flex items-center justify-center border border-[var(--secondary)]
+              bg-[var(--primary)] text-white shadow-md group-hover:scale-105 transition">
+  <div
+          class="w-10 h-10 rounded-2xl flex items-center justify-center bg-white border-2 border-[var(--primary)] shadow-md group-hover:scale-105 transition dark:bg-[var(--primary)] dark:text-white dark:border-0"
+        >
+          <img
+            src="/images/app_logo.png"
+            alt="CommitMa3ana Logo"
+            class="w-10 h-10 rounded-2xl object-cover"
+          />
+        </div>
+
+        </div>
+
+      <span class="font-semibold text-lg tracking-wide">Commit Ma3ana</span>
+    </div>
+
+    <div class="bg-[var(--surface)] p-5 rounded-2xl shadow-2xl mb-10">
+      <img src="/auth-illustration.png" alt="coding illustration" class="w-56">
+    </div>
+
+    <div class="text-center max-w-sm">
+      <h1 class="text-4xl font-bold leading-snug mb-4">
+        Commit today.<br>
+        <span class="text-[var(--secondary)]">Build your future.</span>
+      </h1>
+      <p class="text-sm opacity-80 leading-relaxed">
+        Join thousands of learners building consistency and
+        growing their programming skills — one commit at a time.
+      </p>
+    </div>
+
+    <!-- <div class="flex gap-7 mt-9 text-sm opacity-90">
+      <span class="flex items-center gap-2"> Learn by doing</span>
+      <span class="flex items-center gap-2"> Track progress</span>
+      <span class="flex items-center gap-2"> Grow daily</span>
+    </div> -->
+
+
+    <div class="flex gap-7 mt-9 text-sm opacity-90">
+
+  <!-- Learn by doing — Code bracket icon -->
+  <span class="flex items-center gap-2">
+    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+         fill="none" stroke="currentColor" stroke-width="2"
+         stroke-linecap="round" stroke-linejoin="round">
+      <polyline points="16 18 22 12 16 6"/>
+      <polyline points="8 6 2 12 8 18"/>
+    </svg>
+    Learn by doing
+  </span>
+
+  <!-- Track progress — Bar chart icon -->
+  <span class="flex items-center gap-2">
+    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+         fill="none" stroke="currentColor" stroke-width="2"
+         stroke-linecap="round" stroke-linejoin="round">
+      <line x1="18" y1="20" x2="18" y2="10"/>
+      <line x1="12" y1="20" x2="12" y2="4"/>
+      <line x1="6"  y1="20" x2="6"  y2="14"/>
+    </svg>
+    Track progress
+  </span>
+
+  <!-- Grow daily — Trending up icon -->
+  <span class="flex items-center gap-2">
+    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+         fill="none" stroke="currentColor" stroke-width="2"
+         stroke-linecap="round" stroke-linejoin="round">
+      <polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/>
+      <polyline points="17 6 23 6 23 12"/>
+    </svg>
+    Grow daily
+  </span>
+
+</div>
+
+  </div>
+
+  <div class="flex-1 lg:w-[52%] bg-[var(--background)] flex justify-center items-center p-6 sm:p-10">
+    <div class="w-full max-w-[420px]">
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+
+</div>

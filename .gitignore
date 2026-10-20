@@ -1,0 +1,15 @@
+**/.env
+**/.env.*
+!**/.env.example
+**/.git/
+
+**/.idea/
+**/.vscode/
+**/staticfiles/
+
+LMS_backend/backup*.json
+LMS_backend/temp_debug.py
+LMS_backend/temp_students.json
+LMS_backend/check_db*.py
+LMS_backend/debug_*.py
+LMS_backend/fix_*.py

@@ -1,0 +1,383 @@
+/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom utilities for your design system */
+@layer utilities {
+  .text-display {
+    @apply text-[48px] md:text-[30px] font-bold tracking-tight leading-tight;
+  }
+
+  .text-h2 {
+    @apply text-[30px] md:text-[20px] font-semibold leading-snug;
+  }
+
+  .text-body {
+    @apply text-[16px] md:text-[15px] font-normal leading-relaxed;
+  }
+
+  .text-small {
+    @apply text-[13px] font-medium;
+  }
+}
+
+@media (max-width: 768px) {
+  .text-display {
+    @apply text-[30px];
+  }
+
+  .text-h2 {
+    @apply text-[20px];
+  }
+
+  .text-body {
+    @apply text-[15px];
+  }
+}
+
+
+
+:root,
+.light {
+  --primary: #0A5C75;
+  --on-primary: #FFFFFF;
+  --secondary: #A8DF8E;
+  --on-secondary: #0A3D2E;
+
+  --background: #F3F7F8;
+  --on-background: #102A33;
+  --surface: #FFFFFF;
+  --on-surface: #102A33;
+
+  --primary-hover: #084C61;
+  --secondary-hover: #8FCC72;
+  --disabled-button: #B0BEC5;
+  --disabled-text: #78909C;
+
+  --outline: #D1DDE1;
+  --divider: #D1DDE1;
+
+  --text-primary: #102A33;
+  --text-secondary: #37474F;
+  --text-tertiary: #607D8B;
+
+  --error: #D32F2F;
+  --on-error: #FFFFFF;
+
+  --input-bg: #F3F7F8;
+}
+
+.dark {
+  --primary: #1A8FAD;
+  --on-primary: #FFFFFF;
+  --primary-hover: #157791;
+
+  --background: #121A1F;
+  --on-background: #E0E7EB;
+  --surface: #1A242B;
+  --on-surface: #E0E7EB;
+
+  --outline: #2C3A40;
+  --divider: #2C3A40;
+
+  --text-primary: #E0E7EB;
+  --text-secondary: #B0BEC5;
+  --text-tertiary: #90A4AE;
+
+  --disabled-button: #2C3A40;
+  --disabled-text: #607D8B;
+
+  --error: #EF5350;
+  --on-error: #FFFFFF;
+
+  --input-bg: #121A1F;
+}
+
+.bg-surface {
+  background-color: var(--surface);
+}
+
+svg {
+  flex-shrink: 0;
+}
+
+svg:hover {
+  transform: scale(1.1);
+  transition: 0.2s;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus {
+  -webkit-box-shadow: 0 0 0px 1000px var(--input-bg, #ffffff) inset !important;
+  -webkit-text-fill-color: var(--text-primary) !important;
+  transition: background-color 5000s ease-in-out 0s;
+}
+
+svg {
+  width: 20px;
+  height: 20px;
+  color: var(--text-primary);
+
+}
+
+/* Ensure body background & color always follow CSS variables */
+body {
+  background-color: var(--background) !important;
+  color: var(--text-primary) !important;
+  transition: background-color 0.25s ease, color 0.25s ease;
+}
+
+
+:root {
+  --font-family: 'Inter', sans-serif;
+  --tab-active-bg: #ffffff;
+  --fs-display: 48px;
+  --fs-h2: 30px;
+  --fs-body: 16px;
+  --fs-small: 13px;
+}
+
+@media (max-width: 768px) {
+  :root {
+    --fs-display: 30px;
+    --fs-h2: 20px;
+    --fs-body: 15px;
+    --fs-small: 13px;
+  }
+}
+
+* {
+  font-family: var(--font-family) !important;
+  -webkit-font-smoothing: antialiased;
+  box-sizing: border-box;
+}
+
+
+.font-display {
+  font-size: var(--fs-display);
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+.font-title {
+  font-size: var(--fs-h2);
+  font-weight: 600;
+}
+
+.font-body {
+  font-size: var(--fs-body);
+  font-weight: 400;
+  line-height: 1.7;
+}
+
+.font-caption {
+  font-size: var(--fs-small);
+  font-weight: 500;
+}
+
+
+.fw-regular {
+  font-weight: 400 !important;
+}
+
+.fw-medium {
+  font-weight: 500 !important;
+}
+
+.fw-semibold {
+  font-weight: 600 !important;
+}
+
+.fw-bold {
+  font-weight: 700 !important;
+}
+
+button,
+input,
+select,
+textarea {
+  font-family: var(--font-family);
+}
+
+
+.form-icon {
+  width: 16px;
+  height: 16px;
+  color: var(--text-tertiary);
+}
+
+
+
+/* SweetAlert Modern Theme */
+
+.swal2-popup {
+  border-radius: 18px !important;
+  padding: 24px !important;
+  font-family: var(--font-family) !important;
+  background: var(--surface) !important;
+  color: var(--text-primary) !important;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15) !important;
+}
+
+/* Title */
+
+.swal2-title {
+  font-size: 22px !important;
+  font-weight: 600 !important;
+  color: var(--text-primary) !important;
+}
+
+/* Text */
+
+.swal2-html-container {
+  font-size: 15px !important;
+  color: var(--text-secondary) !important;
+}
+
+/* Buttons container */
+
+.swal2-actions {
+  margin-top: 20px !important;
+}
+
+/* Confirm Button */
+
+.swal2-confirm {
+  background: var(--primary) !important;
+  border-radius: 12px !important;
+  padding: 10px 22px !important;
+  font-weight: 600 !important;
+  transition: all .2s ease !important;
+}
+
+.swal2-confirm:hover {
+  background: var(--primary-hover) !important;
+  transform: translateY(-1px);
+}
+
+/* Cancel Button */
+
+.swal2-cancel {
+  background: var(--outline) !important;
+  color: var(--text-primary) !important;
+  border-radius: 12px !important;
+  padding: 10px 22px !important;
+}
+
+/* Icons spacing */
+
+.swal2-icon {
+  margin-top: 10px !important;
+  margin-bottom: 10px !important;
+}
+
+/* Input */
+
+.swal2-input {
+  border-radius: 10px !important;
+  border: 1px solid var(--outline) !important;
+}
+
+/* Dark mode fix */
+
+.dark .swal2-popup {
+  background: #1E2A30 !important;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5) !important;
+}
+
+.dark .swal2-confirm {
+  background: var(--primary) !important;
+}
+
+.dark .swal2-cancel {
+  background: #2A3A40 !important;
+  color: #E0E7EB !important;
+  background-color: var(--disabled-button) !important;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(-10px);
+  }
+
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.animate-float {
+  animation: float 4s ease-in-out infinite;
+}
+
+.quiz-card {
+  @apply bg-surface border border-[var(--outline)] rounded-2xl p-5 flex items-center justify-between shadow-sm;
+}
+
+.quiz-title {
+  @apply font-semibold text-[var(--text-primary)];
+}
+
+.quiz-label {
+  @apply text-xs text-[var(--text-tertiary)] mt-1;
+}
+
+.quiz-muted {
+  @apply text-[var(--text-secondary)] mt-1;
+}
+
+.quiz-attempts {
+  @apply text-xs text-[var(--text-tertiary)] mt-1;
+}
+
+.quiz-score {
+  @apply font-semibold mt-1;
+}
+
+.quiz-score.success {
+  color: var(--primary);
+}
+
+.quiz-score.error {
+  color: var(--error);
+}
+
+.btn-primary {
+  @apply px-4 py-2 rounded-lg text-sm text-white;
+  background-color: var(--primary);
+}
+
+.btn-outline {
+  @apply px-4 py-2 rounded-lg text-sm;
+  border: 1px solid var(--primary);
+  color: var(--primary);
+}
+
+.btn-disabled {
+  @apply px-4 py-2 rounded-lg text-sm;
+  border: 1px solid var(--outline);
+  color: var(--text-tertiary);
+}
+
+.empty-state {
+  @apply text-center py-16 text-[var(--text-tertiary)];
+}
+.btn-error {
+  @apply px-4 py-2 rounded-lg text-sm;
+  border: 1px solid var(--error);
+  color: var(--error);
+}
+.material-card {
+  border-color: var(--outline);
+}
+.material-card:hover {
+  border-color: var(--primary);
+}

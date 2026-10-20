@@ -1,0 +1,12 @@
+to add @JsonSerializable() to model file
+flutter pub run build_runner build
+
+
+instructor
+Abdallah@2026
+abdullahalqiran@gmail.com
+
+instructor
+tahasaberts1@gmail.com
+iTIVu4X1
+
