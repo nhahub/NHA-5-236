@@ -99,22 +99,3 @@ lib/
 * **State**: Use `BlocBuilder` to handle all states gracefully.
 
 Objective: Deliver high-performance, fully responsive screens through a clean and maintainable codebase.
-
-## Development Team
-
-### Flutter Team
-
-* [Abdallah Alqiran](https://github.com/Abdallah-Alqiran) "Team Leader"
-* [Taha Saber](https://github.com/Taha-Saber)
-* [Mayar Abdelrahim](https://github.com/Mayar-Abdelrahim)
-
-### Front-End Team
-
-* [Rawan Bahaa](https://github.com/Rawanbahaa142)
-* [Reham Ahmed](https://github.com/reham14-ahmed)
-
-### Back-End Team
-
-* [Omnia Abdelnasser](https://github.com/Omnia-Abdelnasser)
-* [Rana Badawy](https://github.com/Rana-A-Badawy)
-* [Taha Fawzy](https://github.com/Taha-M-Fawy)
