@@ -122,24 +122,3 @@ The root module. Handles global imports, provider registration, and app bootstra
 - **State Handling**: Use `*ngIf` and `async` pipe to handle all observable states (loading / loaded / error) gracefully.
 
 Objective: Deliver high-performance, fully responsive screens through a clean and maintainable Angular codebase.
-
----
-
-## Development Team
-
-### Front-End Team
-- [Rawan Bahaa](https://github.com/Rawanbahaa142) 
-- [Reham Ahmed](https://github.com/reham14-ahmed)
-- [Mohamed Hofny](https://github.com/MohamedHofny)
-
-### Flutter (Mobile) Team
-
-- [Abdallah Alqiran](https://github.com/Abdallah-Alqiran) — Team Leader
-- [Taha Saber](https://github.com/Taha-Saber)
-- [Mayar Abdelrahim](https://github.com/Mayar-Abdelrahim)
-
-### Back-End Team
-
-- [Omnia Abdelnasser](https://github.com/Omnia-Abdelnasser)
-- [Rana Ahmed](https://github.com/Rana-A-Badawy)
-- [Taha Fawy](https://github.com/Taha-M-Fawy)
